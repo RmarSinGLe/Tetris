@@ -2,8 +2,57 @@ using UnityEngine;
 
 public class Piece : MonoBehaviour
 {
-    public void Initialized(Vector3Int position)
-    {
+    public Board board { get; private set; }
+    public Vector3Int position { get; private set; }
+    public Vector3Int[] cells { get; private set; }
+    public TetrominoData data { get; private set; }
 
+    public void Initialized(Board board,Vector3Int position,TetrominoData tertominoData)
+    {
+        this.board = board;
+        this.position = position;
+        this.data = tertominoData;
+
+        if(this.cells == null)
+        {
+            this.cells=new Vector3Int[data.cells.Length];
+        }
+
+        for(int i = 0; i < data.cells.Length; i++)
+        {
+            this.cells[i] = (Vector3Int)data.cells[i];
+        }
+    }
+
+    private void Update()
+    {
+        this.board.Clear(this);
+
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            Move(Vector2Int.left);
+        }
+        else if(Input.GetKey(KeyCode.D))
+        {
+            Move(Vector2Int.right);
+        }
+
+        this.board.set(this);
+    }
+
+    private bool Move(Vector2Int translation)
+    {
+        Vector3Int newPosition=this.position;
+        newPosition.x += translation.x;
+        newPosition.y += translation.y;
+
+        bool vaild = this.board.IsValidPosition(this,newPosition);
+
+        if(vaild)
+        {
+            this.position=newPosition;
+        }
+
+        return vaild;
     }
 }
