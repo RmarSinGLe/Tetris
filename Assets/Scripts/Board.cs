@@ -5,7 +5,7 @@ public class Board : MonoBehaviour
 {
     public Tilemap tilemap {  get; private set; }
     public Piece activePiece { get; private set; }
-    public Vector3Int spawnPosition;
+    public Vector3Int spawnPosition=new Vector3Int(-1,8,0);
     public TetrominoData[] tetrominos;
     public Vector2Int boardSize=new Vector2Int(10,20);
 
@@ -69,7 +69,7 @@ public class Board : MonoBehaviour
 
         for(int i = 0;i<piece.cells.Length;i++)
         {
-            Vector3Int tilePosition = piece.cells[i] + piece.position;
+            Vector3Int tilePosition = piece.cells[i] + position;
 
             if(!bounds.Contains((Vector2Int)tilePosition))
             {
