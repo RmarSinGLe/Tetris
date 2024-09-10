@@ -1,0 +1,63 @@
+[33mcommit 306e2899e709fd9a7103cf161e7a814476fc1ed8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Mon Sep 9 23:48:22 2024 +0800
+
+    wrong wallkick
+
+[33mcommit 91fcb25a60dde6800cae24984f851f22065c5d86[m
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Sun Sep 8 11:48:31 2024 +0800
+
+    add rotation logic
+
+[33mcommit f46fa02a3d83437e76f7d5dfdcf8e7ed897c3bfc[m
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Sat Sep 7 21:56:50 2024 +0800
+
+    move logic and set
+
+[33mcommit b9bae69ef0bf106176c220d624bf3e2935a11b69[m
+Merge: 96d5a02 e6e6da3
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Wed Sep 4 23:49:51 2024 +0800
+
+    Merge branch 'main' of https://github.com/RmarSinGLe/Tetris
+    the first test
+
+[33mcommit 96d5a025e80bffd1e9b0687fe688c19661cdc79a[m
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Wed Sep 4 23:41:03 2024 +0800
+
+    add the logic of blocks generation
+
+[33mcommit e6e6da3baf93383467a7da369229e4e00eb4679e[m
+Author: Nil <153492214+nill0412@users.noreply.github.com>
+Date:   Wed Sep 4 23:36:56 2024 +0800
+
+    测试
+    
+    删除测试内容
+
+[33mcommit 85602a3d515eb388916248e707f9e69fc07585d7[m
+Author: Nil <153492214+nill0412@users.noreply.github.com>
+Date:   Wed Sep 4 23:34:19 2024 +0800
+
+    Update .gitignore
+
+[33mcommit 8d36b60d03084035f700c2313e121f62e2ab7d98[m
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Tue Sep 3 23:14:49 2024 +0800
+
+    the second day of Tetris development
+
+[33mcommit 183c583401e14fc09b6dfec9a8b2bc662e12358d[m
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Tue Sep 3 00:06:11 2024 +0800
+
+    the first day of Tetris development
+
+[33mcommit 62a00eb576f67d500259d01a753b807407c82c14[m
+Author: RmarSinGLe <1980347585@qq.com>
+Date:   Sun Sep 1 23:12:07 2024 +0800
+
+    intial commit
